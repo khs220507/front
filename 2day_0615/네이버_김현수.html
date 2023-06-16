@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,14 @@
 
     <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+
+
+body {
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
         .wrap{
             width: 600px;
             margin: 0 auto;
@@ -20,7 +30,9 @@
 
         .img_wrap{
             text-align: center;
+            margin: 0 auto;
             padding: 20px;
+            
         }
 
         .order_info_content{
@@ -29,9 +41,25 @@
             color: white;
             border-radius: 25px;
             padding: 10px;
+            margin:0 auto;
             margin-bottom: 10px;
-            width: 500px;
+            
 
+        }
+
+        .simple_buy{
+            font-size: 50px;
+        }
+
+        .low_price{
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .order_info_content_title{
+            font-size :75px;
         }
 
         .order_info_wrap{
@@ -46,6 +74,9 @@
             width: 500px;
             margin-left: auto;
             margin-right: auto;
+            padding : 20px;
+            border: 1px solid black;
+            border-radius: 10px;
             
         }
 
@@ -55,6 +86,7 @@
         
         fieldset{
             text-align: center;
+            border-radius: 20px;
         }
 
         .order_form_wrap{
@@ -62,13 +94,42 @@
             padding : 10px;
         }
 
-        .textarea{
-            padding: 10px;
+        textarea{
+            margin : 10px;
+            background-color: gray;
+            border: 1px solid black ;
+            padding : 15px;
+            border-radius: 5px; 
         }
 
         .filedset{
-            padding: 10px;
+            padding: 15px;
         }
+
+        .search{
+            font-size: 25px;
+            color: white;
+            padding: 10px;
+            background-color: darkgreen;
+            border-radius: 10px;
+        }
+
+        .order_btn{
+            width: 50%;
+            height: 45px;
+            background-color: yellowgreen;
+            border-radius: 10px;
+        }
+
+        .order_btn:hover{
+            width: 50%;
+            height: 45px;
+            color : white;
+            background-color: darkgreen;
+            border-radius: 10px;
+        }
+
+        
 
         
     </style>
@@ -83,22 +144,21 @@
 
         <div class="order_info_wrap">
             <div class="order_info_content">
-                <h2>네이버 스마트 스토어</h2>
-                <p>네이버에서 간편하게 구입하세요</p>
-                <p>최저가 보상 제도!</p>
+                <span class="order_info_content_title">네이버 스마트 스토어</span>
+                <p class="simple_buy">네이버에서 간편하게 구입하세요</p>
+                <p class="low_price">최저가 보상 제도!</p>
             </div>
         </div>
         
 
         <div class="order_form_wrap">
             <div class ="input_content">
-            품목<br>
+            <span class ="search">검색</span>
             <input type="text" placeholder="입력하세요">
             <select>
                 <option>1
                 </option>
-                <option>2
-                </option>
+                <option>2                </option>
                 <option>3
                 </option>
                 <option>4
@@ -113,10 +173,10 @@
             </div>
             <div class="filedset">
             <fieldset>
-                <legend>개인정보</legend>
-                <label for ="user-name">이름</label> : <input type="text" id="user-name"><br>
-                <label for = "user-addr">주소</label> : <input type="text" id="user-addr"><br>
-                <label for = "user-phone">번호</label> : <input type="text" id="user-phone">
+                <legend>Please enter your information</legend>
+                <label for ="user-name">이름</label> : <input type="text" id="user-name" placeholder="이름을 입력하세요"><br>
+                <label for = "user-addr">주소</label> : <input type="text" id="user-addr" placeholder="주소를 입력하세요"><br>
+                <label for = "user-phone">번호</label> : <input type="text" id="user-phone" placeholder="번호를 입력하세요">
             </fieldset>
         </div>
 
@@ -125,7 +185,7 @@
 
 
             
-            <button>주문하기</button>
+            <button class="order_btn">주문하기</button>
 
             
         </div>

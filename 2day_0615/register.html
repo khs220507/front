@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    .whiteborder{
+        border: none;
+        background-color: skyblue;
+        text-align: center;
+    }
+
+    table{
+        border: 1px solid black;
+        width: 1000px;
+        font-size: 30px;
+        border-collapse: collapse;
+    }
+
+    td{
+        border: 1px solid black;
+        
+    }
+
+    .left-side{
+        background-color: aqua;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+
+    input{
+        margin: 10px;
+    }
+
+    tfoot{
+        text-align: center;
+    }
+</style>
+    
+</head>
+<body>
+<table>
+    <caption>회원가입</caption>
+    <tbody>
+        <tr>
+            <td class="whiteborder">이름</td>
+            
+            <td><input type="text"></input></td>
+        </tr>
+        <tr>
+            <td class="whiteborder">아이디</td>
+            <td><input type="text"></input><button>중복확인</button></td>
+        </tr>
+        <tr>
+            <td class="whiteborder">비밀번호</td>
+            <td><input type="text"></input><p>*비밀번호는 4자리 이상이어야 한다.</p></td>
+        </tr>
+        <tr>
+            <td class="whiteborder">비밀번호확인</td>
+            <td><input type="text"></input></td>
+        </tr>
+        <tr>
+            <td class="whiteborder">이메일</td>
+            <td><input type="text"></input>@<input type="text"></input><select><option>naver.com</option>
+                <option>gmail.com</option>
+                <option>daum.net</option>
+            </select>
+            <button>이메일중복확인</button>
+        </td>
+        </tr>
+        <tr>
+            <td class="whiteborder">학년/반</td>
+            <td><select><option>1</option>
+                <option>2</option>
+                <option>3</option></select>학년
+            
+                <select><option>1</option>
+                    <option>2</option>
+                    <option>3</option></select>반</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        
+            <td colspan="2"><button>가입</button><button>취소</button></td>
+        </tr>
+    </tfoot>
+
+</table>
+    
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .board-star-wrap{
+            width: 500px;
+            height: 500px;
+
+        }
+
+        .board{
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+
+            position: relative;
+        }
+
+        .star1{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:0px;
+            top:0px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star2{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:25px;
+            top:25px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star3{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:50px;
+            top:50px;
+            
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            
+            background-position: center;
+        }
+
+        .star4{
+            width: 30px;
+            height: 30px;
+            left:75px;
+            top:75px;
+
+            position: absolute;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+        .star6{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:100px;
+            top:100px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star7{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:125px;
+            top:125px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star8{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:150px;
+            top:150px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star9{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:175px;
+            top:175px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .star10{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:200px;
+            top:200px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        .star11{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:225px;
+            top:225px;
+
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star12{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left:250px;
+            top:250px;
+
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star13{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+
+            left: 275px;
+            top: 275px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .star14{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+
+            left: 250px;
+            top: 250px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/130/130188.png?w=826&t=st=1687220400~exp=1687221000~hmac=421da4a8ad6d130141ef4ab40ec5998ebdcc6294615e38cbd8ed1144c3ea7d6d);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="board-star-wrap">
+        <div class="board">
+
+        <div class="star1"></div>
+        <div class="star2"></div>
+        <div class="star3"></div>
+        <div class="star4"></div>
+        <div class="star5"></div>
+        <div class="star6"></div>
+        <div class="star7"></div>
+        <div class="star8"></div>
+        <div class="star9"></div>
+        <div class="star10"></div>
+        <div class="star11"></div>
+        <div class="star12"></div>
+        <div class="star13"></div>
+        <div class="star14"></div>
+       </div>
+
+    </div>
+    
+</body>
+</html>

@@ -54,9 +54,9 @@ ul{
 .input_text{
     margin-left: 300px;
     margin-bottom: 10px;
-    width: 400px;
-    height: 20px;
-    border-radius: 10px 0px 0px 10px;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
     margin-right: 0px;
 }
 
@@ -116,8 +116,8 @@ ul{
 }
 
 .back_img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     border-radius: 30px;
 }
 

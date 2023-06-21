@@ -1,0 +1,117 @@
+
+.flexmode{
+    display: flex;
+}
+
+.list_btn{
+    list-style: none;
+
+
+}
+
+ul{
+    display: inline-block;
+}
+
+.left_top_list{
+    width: 20px;
+    height: 20px;
+}
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
+.btn_img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.left_btn{
+    background-color: transparent;
+    border: 0px;
+    margin: 10px;
+}
+
+.left_side{
+    width: 15%;
+    font-size: 10px;
+}
+
+.wrap{
+    display: flex;
+    
+}
+
+
+.inputbox{
+    display: flex;
+    height: 50px;
+    
+}
+
+.input_text{
+    margin-left: 300px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+}
+
+.search_btn{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+
+}
+
+.search_btn_logo{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+
+}
+
+.simplebtn{
+    border: 0;
+    border-radius: 5px;
+}
+
+.header{
+    height: 50px;
+    display: flex;
+}
+
+.main_content{
+    height: 500px;
+    margin: 50px;
+}
+
+.right_side{
+    display: flex;
+    margin-left: 300px;
+    
+}
+
+
+.profile{
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+
+.right_btn{
+    background-color: transparent;
+    border: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+

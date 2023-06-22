@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        function check() {
+
+            let useridTag = document.getElementById("userid");
+
+            let userid = useridTag.value;
+
+            useridTag.value="김민재";
+
+            if (userid == "") {
+                alert("아이디를 입력하세요");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <input type="text" id="userid" value="김현수">
+    <button onclick="check()">클릭</button>
+    <img src="고양이.jpg">
+
+
+</body>
+
+</html>

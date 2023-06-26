@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        let n = 0;
+        while (n<3) {
+
+            let score = parseInt(prompt("점수를 입력하세요", "100"));
+            let grade;
+
+            n++;
+
+            if(score<0){
+                alert("프로그램종료")
+                break;
+            }
+
+            if (score >= 90) {
+                grade = "A";
+            }
+            else if (score >= 80) {
+                grade = "B";
+            }
+            else if (score >= 70) {
+                grade = "C";
+            }
+            else if (score >= 60) {
+                grade = "D";
+            }
+            else {
+                grade = "F"
+            }
+
+
+
+            alert(grade);
+
+        }
+
+    </script>
+</body>
+
+</html>
